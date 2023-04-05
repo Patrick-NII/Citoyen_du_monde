@@ -12,9 +12,8 @@ header {
 header a {
 	color: #fff;
 }
-
 .jumbotron {
-	background-image: url('images/jumbotron-bg.jpg');
+    background: url('./Img/association-152746_1280.png');
 	background-size: cover;
 	color: #fff;
 	text-align: center;
