@@ -12,10 +12,12 @@ header {
 header a {
 	color: #fff;
 }
+.container {
+    width: 100vw;
+    height: 100vh;
+}
 .jumbotron {
-    background: url('./Img/association-152746_1280.png');
-	background-size: cover;
-	color: #fff;
+	color: #ffffff;
 	text-align: center;
 	padding: 100px 0;
 }
