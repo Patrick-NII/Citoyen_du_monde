@@ -8,6 +8,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline;
 	
 }
+body {
+    
+    overflow-x: hidden;
+}
 
 @media (min-width: 576px) and (max-width: 767px) {
 	.letter {
@@ -16,6 +20,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	  height: 7vw;
 	  margin: 0.5vw;
 	}
+    #myNavbar .navbar-nav {
+        display: none;
+    }
   }
   
   @media (min-width: 768px) and (max-width: 991px) {
@@ -25,6 +32,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	  height: 5vw;
 	  margin: 0.3vw;
 	}
+    #myNavbar .navbar-nav {
+        display: none;
+    }
   }
   
   @media (min-width: 992px) and (max-width: 1199px) {
@@ -79,6 +89,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	  height: 5vw;
 	  margin: 0.5vw;
 	}
+    #myNavbar .navbar-nav {
+        display: none;
+    }
   }
   
   @media (max-width: 399px) {
@@ -88,5 +101,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	  height: 4vw;
 	  margin: 0.5vw;
 	}
+    #myNavbar .navbar-nav {
+        display: none;
+    }
   }
   
