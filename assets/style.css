@@ -1,39 +1,145 @@
-/*========reset=========*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	
-}
 
 @font-face {
-	font-family: 'Earwig';
-	src: url('assets/fonts/earwig.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-  }
+	font-family: 'Aston';
+	src: url('fonts/Astonpoliz.ttf') format('truetype');
+ }
+@font-face {
+	font-family: 'Chalk';
+	src: url('fonts/Chalkboy.woff') format('woff');
+ }
+@font-face {
+	font-family: 'Chery';
+	src: url('fonts/CHERY.ttf') format('truetype');
+ }
+ header .navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-
-@media (min-width: 768px) {
-	.container {
-		max-width: 750px;
-	}
-}
-
-@media (min-width: 992px) {
-	.container {
-		max-width: 970px;
-	}
-}
+ }
 
 #acceuil h1 {
 	font-size: 2.5rem;
 	font-weight: bold;
 	margin-bottom: 1rem;
 	margin-top: 2rem;
-	color: #333;
+	color: #ff8c00;
+	font-family: 'Aston';
+	font-weight: bold;
+  }
+ 
+  #Name-brand {
+	font-family: 'Chalk';
+	color: #ffffff;
+  }
+  #Name-brand .word {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	white-space: nowrap;
+	width: 50%;
+	padding-left: 25px;
+	padding-top: 15px;
+  }
+  
+  .letter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	width: 10%;
+	height: 10%;
+	margin: 1%;
+  }
+  
+  
+  .c {
+	background-color: red;
+	transform: rotate(20deg);
+  }
+  
+  .i {
+	background-color: orange;
+	transform: rotate(-5deg);
+  }
+  
+  .t {
+	background-color: yellow;
+	transform: rotate(10deg);
+  }
+  
+  .o {
+	background-color: green;
+	transform: rotate(-10deg);
+  }
+  
+  .y {
+	background-color: blue;
+	transform: rotate(10deg);
+  }
+  
+  .e {
+	background-color: indigo;
+	transform: rotate(-30deg);
+  }
+  
+  .n {
+	background-color: violet;
+	transform: rotate(-20deg);
+  }
+  
+  .d {
+	background-color: pink;
+	transform: rotate(10deg);
+  }
+  
+  .u {
+	background-color: brown;
+	transform: rotate(10deg);
+  }
+  
+  .m {
+	background-color: rgb(0, 255, 251);
+	transform: rotate(-10deg);
+  }
+  
+  .o2 {
+	background-color: silver;
+	transform: rotate(180deg);
+  }
+  
+  .n2 {
+	background-color: gold;
+	transform: rotate(-5deg);
+  }
+  
+  .d2 {
+	background-color: rgb(0, 55, 55);
+	transform: rotate(10deg);
+  }
+  
+  .e2 {
+	background-color: lime;
+	transform: rotate(-10deg);
+  }
+  
+  
+  
+  .navbar {
+	background-color: rgb(0, 128, 160);
+	width: 100vw;
+	height: 10vh;
+  }
+  
+  
+  #myNavbar a {
+	color: white;
+  }
+  
+
+  section {
+	width: 100vw;
+	height: 100vh;
   }
   
