@@ -13,6 +13,39 @@ body {
     overflow-x: hidden;
 }
 
+  
+  @media (max-width: 399px) {
+	.letter {
+	  font-size: 3vw;
+	  width: 4vw;
+	  height: 4vw;
+	  margin: 0.5vw;
+	}
+    #myNavbar .navbar-nav {
+        display: none;
+    }
+   main  #acceuil h1 {
+        font-size: 2.5rem;
+      }
+  }
+  
+  @media (min-width: 400px) and (max-width: 575px) {
+	.letter {
+	  font-size: 4vw;
+	  width: 5vw;
+	  height: 5vw;
+	  margin: 0.5vw;
+	}
+    #myNavbar .navbar-nav {
+        display: none;
+    }
+    main  #acceuil h1 {
+        font-size: 3rem;
+      }
+    
+  }
+  
+
 @media (min-width: 576px) and (max-width: 767px) {
 	.letter {
 	  font-size: 6vw;
@@ -23,6 +56,9 @@ body {
     #myNavbar .navbar-nav {
         display: none;
     }
+    main  #acceuil h1 {
+        font-size: 3.5rem;
+      }
   }
   
   @media (min-width: 768px) and (max-width: 991px) {
@@ -35,6 +71,9 @@ body {
     #myNavbar .navbar-nav {
         display: none;
     }
+    main  #acceuil h1 {
+        font-size: 4rem;
+      }
   }
   
   @media (min-width: 992px) and (max-width: 1199px) {
@@ -82,27 +121,4 @@ body {
 	}
   }
   
-  @media (min-width: 400px) and (max-width: 575px) {
-	.letter {
-	  font-size: 4vw;
-	  width: 5vw;
-	  height: 5vw;
-	  margin: 0.5vw;
-	}
-    #myNavbar .navbar-nav {
-        display: none;
-    }
-  }
-  
-  @media (max-width: 399px) {
-	.letter {
-	  font-size: 3vw;
-	  width: 4vw;
-	  height: 4vw;
-	  margin: 0.5vw;
-	}
-    #myNavbar .navbar-nav {
-        display: none;
-    }
-  }
   
