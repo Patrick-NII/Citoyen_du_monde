@@ -8,9 +8,10 @@
 	src: url('fonts/Chalkboy.woff') format('woff');
  }
 @font-face {
-	font-family: 'Chery';
-	src: url('fonts/CHERY.ttf') format('truetype');
+	font-family: 'Christ';
+	src: url('fonts/Christ.ttf') format('truetype');
  }
+
 
 
  header .navbar {
@@ -18,12 +19,14 @@
 	align-items: center;
 	justify-content: center;
 	font-family: 'Chalk';
-	font-size: 1.2rem;
 	background-color: rgb(0, 128, 160);
 	width: 100vw;
 	height: 12vh;
   }
- 
+  header .navbar-nav a {
+	font-size: 1rem;
+	font-family: 'Christ';
+  }
   .navbar-nav  {
 	position: absolute;
 	display: flex;
@@ -181,6 +184,7 @@
 	color: #434343;
 	font-family: 'Aston';
 	align-items: center;
+	cursor: pointer;
 	
   }
 
