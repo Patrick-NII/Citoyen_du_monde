@@ -9,7 +9,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	
 }
 body {
-    
     overflow-x: hidden;
 }
 
@@ -25,6 +24,11 @@ body {
     }
    main  #acceuil h1 {
         font-size: 2.5rem;
+      }
+      footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
       }
   }
   
@@ -44,6 +48,11 @@ body {
     }
     main  #acceuil h1 {
         font-size: 3rem;
+      }
+      footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
       }
     
   }
@@ -65,6 +74,11 @@ body {
     main  #acceuil h1 {
         font-size: 3.5rem;
       }
+      footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
+      }
   }
   
   @media (min-width: 768px) and (max-width: 991px) {
@@ -83,6 +97,11 @@ body {
     main  #acceuil h1 {
         font-size: 4rem;
       }
+      footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
+      }
   }
   
   @media (min-width: 992px) and (max-width: 1199px) {
@@ -92,6 +111,11 @@ body {
 	  height: 3.5vw;
 	  margin: 0.2vw;
 	}
+    footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
+      }
   }
   
   @media (min-width: 1200px) and (max-width: 1439px) {
@@ -101,6 +125,11 @@ body {
 	  height: 2.5vw;
 	  margin: 0.15vw;
 	}
+    footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
+      }
   }
   
   @media (min-width: 1440px) and (max-width: 1599px) {
@@ -110,6 +139,11 @@ body {
 	  height: 2.2vw;
 	  margin: 0.1vw;
 	}
+    footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
+      }
   }
   
   @media (min-width: 1600px) and (max-width: 1919px) {
@@ -119,6 +153,11 @@ body {
 	  height: 1.8vw;
 	  margin: 0.1vw;
 	}
+    footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
+      }
   }
   
   @media (min-width: 1920px) {
@@ -128,6 +167,11 @@ body {
 	  height: 1.5vw;
 	  margin: 0.08vw;
 	}
+    footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
+      }
   }
   
   

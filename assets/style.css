@@ -12,21 +12,24 @@
 	src: url('fonts/Christ.ttf') format('truetype');
  }
 
-
+body::-webkit-scrollbar {
+	display: none;
+  }
 
  header .navbar {
 	display: block;
 	align-items: center;
 	justify-content: center;
 	font-family: 'Chalk';
-	background-color: rgb(0, 128, 160);
+	background-color: #0080a0;
 	width: 100vw;
 	height: 12vh;
   }
   header .navbar-nav a {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	font-family: 'Christ';
   }
+
   .navbar-nav  {
 	position: absolute;
 	display: flex;
@@ -164,10 +167,11 @@
   #acceuil h1 {
 	font-size: 5rem;
 	font-weight: bold;
-	color: #ff8c00;
+	color: #ffffff;
 	font-family: 'Aston';
 	font-weight: bold;
 	text-align: center;
+	text-shadow: 1px 4px 16px #000000;
 	overflow: hidden;
   }
   .jumbotron {
@@ -175,21 +179,32 @@
     justify-content: center;
 	align-items: center;
 }
-.jumbotron span {
-    margin: 0 10px;
-}
-
+  
+  #acceuil .spanner {
+	position: relative;
+	bottom: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
   #acceuil span {
 	font-size: 1rem;
-	color: #434343;
+	color: #ffffff;
 	font-family: 'Aston';
-	align-items: center;
 	cursor: pointer;
-	
+	margin: 0 10px;
+	padding: 6px;
+	border-radius: 5px;
+	background: #0080a0b3;
+	border: 1px solid #00ccff;
   }
 
-  .jumbotron .container h1 {
+  .jumbotron .content h1 {
 	height: 88vh;
   	display: flex;
   	align-items: center;
+  }
+  .jumbotron .content {
+	position: absolute;
+	z-index: 2;
   }
