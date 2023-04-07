@@ -15,12 +15,11 @@ body {
 
   
   @media (max-width: 399px) {
-	.letter {
-	  font-size: 3vw;
-	  width: 4vw;
-	  height: 4vw;
-	  margin: 0.5vw;
-	}
+    
+    header .container .word {
+        width: 70%;
+        padding-top: 30px;
+    }
     #myNavbar .navbar-nav {
         display: none;
     }
@@ -30,7 +29,11 @@ body {
   }
   
   @media (min-width: 400px) and (max-width: 575px) {
-	.letter {
+	header .container .word {
+        width: 70%;
+        padding-top: 25px;
+    }
+    .letter {
 	  font-size: 4vw;
 	  width: 5vw;
 	  height: 5vw;
@@ -45,9 +48,12 @@ body {
     
   }
   
-
 @media (min-width: 576px) and (max-width: 767px) {
-	.letter {
+	header .container .word {
+        width: 70%;
+        padding-top: 25px;
+    }
+    .letter {
 	  font-size: 6vw;
 	  width: 7vw;
 	  height: 7vw;
@@ -62,7 +68,10 @@ body {
   }
   
   @media (min-width: 768px) and (max-width: 991px) {
-	.letter {
+    header .container .word {
+        padding-top: 22px;
+    }
+    .letter {
 	  font-size: 4vw;
 	  width: 5vw;
 	  height: 5vw;
