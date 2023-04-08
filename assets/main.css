@@ -30,6 +30,9 @@ body {
         height: 100vh;
         background: #0080a0;
       }
+      footer .container p {
+        font-size: 0.6rem;
+      }
   }
   
   @media (min-width: 400px) and (max-width: 575px) {
@@ -53,6 +56,9 @@ body {
         width: 100vw;
         height: 100vh;
         background: #0080a0;
+      }
+      footer .container p {
+        font-size: 0.8rem;
       }
     
   }
@@ -78,6 +84,9 @@ body {
         width: 100vw;
         height: 100vh;
         background: #0080a0;
+      }
+      footer .container p {
+        font-size: 1rem;
       }
   }
   
