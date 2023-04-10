@@ -5,18 +5,76 @@ body {
 	padding: 0;
 	overflow-x: hidden;
 }
-body::-webkit-scrollbar {
+
+main::-webkit-scrollbar {
 	display: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+	height: 100vh;
+	overflow-x: hidden;
+}
+section {
+	scroll-snap-align: start;
+}
+.navbar-brand img {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	left: 275px;
 }
 
 .navbar .container a,
 .navbar .container .nav {
-	color: #ff7700;
+	color: #0095ff;
 }
+#myNavbar .nav li {
+	background-color: #f8f8f8;
+	margin-left: 6px;
+	width: 8rem;
+	height: 3.5rem;
+	z-index: 1;
+}
+#myNavbar .nav a {
+	text-transform: uppercase;
+	color: #005490;
+}
+  
+  .nav a {
+	display: block;
+	text-align: center;
+	font-size: 1rem;
+	margin-top: 1rem;
+	height: 4.5rem;
+	border-radius: 0 0 8px 8px;
+	box-shadow: 0px -20px 0px #ff0000;
+	transition: all 0.3s ease;
+  }
+  
+  .nav a::after{
+	content: '';
+	position: absolute;
+	background-color: rgb(255, 255, 255);
+	border-radius: 5%;
+	}
+  
+  .nav a:hover {
+	background-color: #ffffff;
+	transform: translateY(10px);
+  }
+  
+  .nav a:active {
+	transition: all 0.3s ease;
+  }
+
 .jumbotron {
-	background-image: url('./Img/association-152746_1280.png');
-	background-size: cover;
-	background-position: center;
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -24,10 +82,7 @@ body::-webkit-scrollbar {
 	z-index: 5;
   }
   
-  .jumbotron img {
-	display: none; /* Cache l'image si l'arrière-plan est déjà visible */
-  }
-  
+ 
 
 .jumbotron h1 {
 	font-size: 6em;
@@ -66,6 +121,7 @@ footer .container p {
 	.container {
 		max-width: 750px;
 	}
+
 }
 
 @media (min-width: 992px) {
@@ -83,6 +139,12 @@ section {
   width: 100vw;
 }
 
+/*scroller*/
+.scroller {
+	padding: 4rem;
+	overflow: hidden;
+}
+
 /* Projets */
 .thumbnail {
   display: flex;
@@ -98,26 +160,24 @@ section {
 .thumbnail .caption {
   height: 20%;
 }
-.container {
-	width: 100%;
-	height: auto;
-}
+
 .social-icons {
-	position: fixed;
+	position: absolute;
 	top: 50%;
 	left: 100px;
 	transform: translateY(-50%);
 	display: flex;
 	flex-direction: column;
+	z-index: 1;
   }
   
   .social-icons a {
 	display: block;
 	width: 40px;
 	height: 40px;
-	line-height: 40px;
+	line-height: 42.5px;
 	text-align: center;
-	font-size: 24px;
+	font-size: 2.6rem;
 	margin-bottom: 10px;
 	border-radius: 50%;
 	box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
@@ -130,14 +190,13 @@ section {
 	margin-bottom: 10px;
 	height: 40px;
 	width: 40px;
-	left: 1px;
+	left: -0.5px;
 	background-color: transparent;
 	border-radius: 50%;
-	box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
-  }
+	}
   
   .social-icons a:hover {
-	background-color: #ffffff;
+	background-color: #ffffff00;
 	transform: translate(10px);
   }
   
@@ -153,16 +212,19 @@ section {
   }
   
 
-  .social-icons a {
+  .social-icons [data-icon="mdi:facebook"] {
 	color: #3B5998; 
+	font-size: 2.5rem;
   }
   
   .social-icons [data-icon="mdi:twitter"]{
-	color: #1DA1F2; 
+	color: #1DA1F2;
+	font-size: 2.3rem; 
   }
   
   .social-icons [data-icon="mdi:youtube"]{
 	color: #ff0000; 
+	font-size: 2.3rem;
   }
   
   .social-icons a [data-icon="mdi:instagram"] {
@@ -170,4 +232,111 @@ section {
 	color: white;
 	background: linear-gradient(45deg, #F58529, #DD2A7B, #5500ff); /* dégradé de couleur d'instagram */
   }
+  
+  @media screen and (max-width: 500px) {
+	.social-icons {
+	  left: 10px;
+	  position: absolute;
+
+	}
+	.social-icons a:hover {
+		background-color: none;
+	  }
+	.social-icons a {
+		box-shadow: none;
+	  }
+	  
+	  .social-icons a::after{
+		box-shadow:none;
+	  }
+	
+	.iconify {
+	  font-size: 2rem;
+	  margin-left: -20px;
+	  left: 0px;
+	  position: absolute;
+	}
+	
+  }
+  @media screen and (max-width: 600px) {
+	.social-icons {
+	  left: 10px;
+	}
+	.social-icons a:hover {
+		background-color: none;
+	  }
+	.social-icons a {
+		box-shadow: none;
+	  }
+	  
+	  .social-icons a::after{
+		box-shadow:none;
+	  }
+	
+	.iconify {
+	  font-size: 2rem;
+	  margin-left: -20px;
+	}
+  }
+  @media screen and (max-width: 768px) {
+	.social-icons {
+	  left: 10px;
+	}
+	.social-icons a:hover {
+		background-color: none;
+	  }
+	.social-icons a {
+		box-shadow: none;
+	  }
+	  
+	  .social-icons a::after{
+		box-shadow:none;
+	  }
+	
+	.iconify {
+	  font-size: 2rem;
+	  margin-left: -20px;
+	}
+  }
+  @media screen and (max-width: 989px) {
+	.social-icons {
+	  left: 25px;
+	}
+	.social-icons a:hover {
+		background-color: none;
+	  }
+	.social-icons a {
+		box-shadow: none;
+	  }
+	  
+	  .social-icons a::after{
+		box-shadow:none;
+	  }
+	
+	.iconify {
+	  font-size: 2rem;
+	  margin-left: -20px;
+	}
+  }
+  @media screen and (max-width: 1200px) {
+	.social-icons {
+	  left: 25px;
+	}
+	.social-icons a:hover {
+		background-color: none;
+	  }
+	.social-icons a {
+		box-shadow: none;
+	  }
+	  
+	  .social-icons a::after{
+		box-shadow:none;
+	  }
+	
+	.iconify {
+	  font-size: 2rem;
+	  margin-left: -20px;
+	}
+  }
+
   
