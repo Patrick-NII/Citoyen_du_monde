@@ -56,3 +56,43 @@ footer {
 		max-width: 970px;
 	}
 }
+
+/* Jumbotron */
+.jumbotron {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centrage des h1 */
+.jumbotron h1 {
+  text-align: center;
+}
+
+/* Sections */
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Projets */
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.thumbnail img {
+  height: 80%;
+}
+
+.thumbnail .caption {
+  height: 20%;
+}
+.container {
+	width: 100%;
+	height: auto;
+}
