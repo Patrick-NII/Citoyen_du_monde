@@ -1,9 +1,29 @@
+@font-face {
+	font-family: 'Caviar-Bold';
+	src: url('./font/CaviarDreams_Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Caviar';
+	src: url('./font/CaviarDreams.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Louis';
+	src: url('./font/Louis\ George\ Cafe.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'LouisR';
+	src: url('./font/Louis\ George\ Cafe\ Bold.ttf') format('truetype');
+}
+
 
 body {
 	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
+	font-family: 'LouisR';
+	font-weight: 900;
 }
 
 main::-webkit-scrollbar {
@@ -40,12 +60,13 @@ footer {
 #myNavbar .nav a {
 	text-transform: uppercase;
 	color: #005490;
+	font-family: 'Louis';
 }
   
   .nav a {
 	display: block;
 	text-align: center;
-	font-size: 1rem;
+	font-size: 1.3rem;
 	margin-top: 1rem;
 	height: 4.5rem;
 	border-radius: 0 0 8px 8px;
@@ -71,7 +92,7 @@ footer {
 	background-color: #005490;
 	color: #f8f8f8;
 	width: 8rem;
-	height: 2rem;
+	height: 6rem;
 	transition: all 0.7s ease-in-out;
   }
   
@@ -100,10 +121,11 @@ footer {
  
 
 .jumbotron h1 {
-	font-size: 6em;
+	font-size: 8em;
 	margin-bottom: 0.5em;
 	color: #25274a;
 	text-align: center;
+	font-family: 'Caviar-Bold';
 }
 
 .jumbotron p {
