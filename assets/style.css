@@ -9,15 +9,14 @@ body {
 main::-webkit-scrollbar {
 	display: none;
 }
-html {
-    scroll-behavior: smooth;
-}
+
 
 main {
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
 	height: 100vh;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 section {
 	scroll-snap-align: start;
