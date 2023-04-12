@@ -120,12 +120,21 @@ footer {
   
  
 
-.jumbotron h1 {
-	font-size: 8em;
+ .carousel-inner h1 {
+	position: absolute;
+	background: none;
+	white-space: nowrap;
+	font-size: 10rem;
+	font-weight: bold;
 	margin-bottom: 0.5em;
-	color: #25274a;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 	text-align: center;
 	font-family: 'Caviar-Bold';
+	z-index: 5;
 }
 
 .jumbotron p {
@@ -162,25 +171,6 @@ section {
 	object-fit: cover;
   }
   
-  .carousel-caption {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: white;
-	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-	z-index: 1;
-  }
-  
-  .carousel-caption h5 {
-	font-size: 3rem;
-	font-weight: bold;
-	margin-bottom: 1rem;
-  }
-  
-  .carousel-caption p {
-	font-size: 1.5rem;
-  }
 
   
 .carousel-control-prev,
@@ -224,7 +214,7 @@ section {
   
   .carousel-indicators {
 	position: absolute;
-	bottom: 5rem;
+	bottom: 4rem;
 	left: 50%;
 	transform: translateX(-50%);
 	right: 0;
@@ -237,11 +227,11 @@ section {
   .carousel-indicators li {
 	display: inline-block;
 	width: 2rem;
-	height: 0.5rem;
+	height: 0.2rem;
 	margin: 0 0.5rem;
 	text-indent: -999px;
 	border: none;
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.3);
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
   }
@@ -250,6 +240,8 @@ section {
   .carousel-indicators li:hover,
   .carousel-indicators li.active {
 	background-color: #f8f9fa;
+	width: 2rem;
+	height: 0.2rem;
   }
 
   
