@@ -156,10 +156,11 @@ section {
 }
 
 #myCarousel {
-	height: 100vh;
-	position: relative;
-	overflow: hidden;
-  }
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+ 
+}
   
   .item {
 	height: 100vh;
@@ -173,11 +174,10 @@ section {
   
 
   
-.carousel-control-prev,
-.carousel-control-next {
+.carousel-control{
   width: 5rem;
   height: 5rem;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.1);
   border: none;
   border-radius: 50%;
   top: calc(50% - 2.5rem);
@@ -186,16 +186,15 @@ section {
   opacity: 0.5;
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
+.carousel-control:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+
+.carousel-control {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%, 100%;
@@ -227,11 +226,11 @@ section {
   .carousel-indicators li {
 	display: inline-block;
 	width: 2rem;
-	height: 0.2rem;
+	height: 0.3rem;
 	margin: 0 0.5rem;
 	text-indent: -999px;
 	border: none;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 255, 255, 0.4);
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
   }
@@ -241,7 +240,16 @@ section {
   .carousel-indicators li.active {
 	background-color: #f8f9fa;
 	width: 2rem;
-	height: 0.2rem;
+	height: 0.4rem;
+  }
+
+  .carousel-control .glyphicon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: rgba(248, 249, 250, 0.8);
   }
 
   
