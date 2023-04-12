@@ -146,18 +146,18 @@ section {
   scroll-snap-align: start;
 }
 
-.carousel-container {
-	height: calc(100vh - 80px);
+#myCarousel {
+	height: 100vh;
 	position: relative;
 	overflow: hidden;
   }
   
-  .carousel-item {
-	height: calc(100vh - 80px);
+  .item {
+	height: 100vh;
 	position: relative;
   }
   
-  .carousel-item img {
+  .item img {
 	height: 100%;
 	object-fit: cover;
   }
@@ -181,47 +181,52 @@ section {
   .carousel-caption p {
 	font-size: 1.5rem;
   }
+
   
-  .carousel-control-prev,
-  .carousel-control-next {
-	width: 5rem;
-	height: 5rem;
-	background-color: rgba(0, 0, 0, 0.3);
-	border: none;
-	border-radius: 50%;
-	top: calc(50% - 2.5rem);
-	z-index: 10;
-	transition: all 0.2s ease-in-out;
-	opacity: 0.5;
-  }
-  
-  .carousel-control-prev:hover,
-  .carousel-control-next:hover {
-	background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%, 100%;
-  }
-  
-  .carousel-control-prev-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M15.41 7.41L14 6L8 12l6 6l1.41-1.41L10.83 12l4.58-4.59z'/%3E%3C/svg%3E");
-  }
-  
-  .carousel-control-next-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffffff'%3E%3Cpath d='M8.59 16.59L10 18l6-6l-6-6l-1.41 1.41L13.17 12L8.59 16.59z'/%3E%3C/svg%3E");
-  }
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 50%;
+  top: calc(50% - 2.5rem);
+  z-index: 10;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.5;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%, 100%;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+}
   
   .carousel-indicators {
 	position: absolute;
-	bottom: 2rem;
-	left: 0;
+	bottom: 5rem;
+	left: 50%;
+	transform: translateX(-50%);
 	right: 0;
 	text-align: center;
 	z-index: 10;
@@ -231,59 +236,24 @@ section {
   
   .carousel-indicators li {
 	display: inline-block;
-	width: 1rem;
-	height: 1rem;
+	width: 2rem;
+	height: 0.5rem;
 	margin: 0 0.5rem;
 	text-indent: -999px;
 	border: none;
-	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.5);
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
   }
+
   
   .carousel-indicators li:hover,
   .carousel-indicators li.active {
 	background-color: #f8f9fa;
   }
+
   
-  @media (max-width: 767px) {
-	.carousel-caption {
-	  position: static;
-	  background-color: rgba(0, 0, 0, 0.5);
-	  padding: 1rem;
-	  color: #fff;
-	  text-align: center;
-	}
-	
-	.carousel-caption h3 {
-	  font-size: 2rem;
-	  margin-top: 0;
-	}
-	
-	.carousel-caption p {
-	  font-size: 1.2rem;
-	}
-	
-	.carousel-control-prev,
-	.carousel-control-next {
-	  width: 3rem;
-	  height: 3rem;
-	  top: calc(50% - 1.5rem);
-	}
-  }
-  @media (max-width: 768px) {
-	.carousel-caption h3 {
-	  font-size: 2.5rem;
-	  margin-bottom: 0.5rem;
-	}
-	
-	.carousel-caption p {
-	  font-size: 1.25rem;
-	  margin-bottom: 1rem;
-	}
-  }
-  
+ 
   
 	  
 

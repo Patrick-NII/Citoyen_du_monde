@@ -278,3 +278,47 @@
 		max-width: 970px;
 	}
 }
+
+
+
+
+
+
+
+@media (max-width: 240px) {
+	.carousel-caption {
+	  position: static;
+	  background-color: rgba(0, 0, 0, 0.5);
+	  padding: 1rem;
+	  color: #fff;
+	  text-align: center;
+	}
+	
+	.carousel-caption h3 {
+	  font-size: 2rem;
+	  margin-top: 0;
+	}
+	
+	.carousel-caption p {
+	  font-size: 1.2rem;
+	}
+	
+	.carousel-control-prev,
+	.carousel-control-next {
+	  width: 3rem;
+	  height: 3rem;
+	  top: calc(50% - 1.5rem);
+	}
+  }
+  @media (max-width: 768px) {
+	.carousel-caption h3 {
+	  font-size: 2.5rem;
+	  margin-bottom: 0.5rem;
+	}
+	
+	.carousel-caption p {
+	  font-size: 1.25rem;
+	  margin-bottom: 1rem;
+	}
+  }
+  
