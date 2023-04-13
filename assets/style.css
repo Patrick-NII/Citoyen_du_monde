@@ -49,7 +49,7 @@ footer {
 	width: 4rem;
 }
 .navbar-fixed-top {
-	background-color: transparent;
+	background-color: rgba(255, 255, 255, 0.3);
 }
 
 #myNavbar .nav li {
@@ -71,7 +71,6 @@ footer {
 	width: 8rem;
 	border-radius: 0 0 8px 8px;
 	transition: all 0.1s ease;
-	
 	position: relative;
 	-webkit-transition: all 0.1s ease;
 	-moz-transition: all 0.1s ease;
