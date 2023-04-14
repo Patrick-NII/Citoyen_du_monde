@@ -32,3 +32,5 @@ menuItems.forEach(function(item) {
     item.style.color = '#f8f8f8'; // Changement de la couleur de texte
   });
 });
+
+
