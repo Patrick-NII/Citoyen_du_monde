@@ -197,7 +197,7 @@ section {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.1);
   }
   
  
@@ -223,13 +223,11 @@ section {
 	text-align: center;
 	color: transparent;
 	text-align: 0 1px 1px;
-	-webkit-text-stroke: 2px #ffffff;
 	text-shadow: none;
 	transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   .concept-two .hover:hover span {
 	transform: scale(1.5);
-	color: #fff;
 	-webkit-text-stroke: 2px transparent;
 	text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
@@ -241,6 +239,272 @@ section {
 	margin-left: 15px;
   }
   
+  .letter1 {
+  background-color: red;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  height: 60px;
+  rotate: 10deg;
+  -webkit-text-stroke: 2px blue;
+  -webkit-border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  -moz-border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  -ms-border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  -o-border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+}
+
+.letter2 {
+  background-color: green;
+  height: 60px;
+  rotate: -10deg;
+  -webkit-text-stroke: 2px yellow;
+  border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+  -webkit-border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+  -moz-border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+  -ms-border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+  -o-border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+}
+
+.letter3 {
+  background-color: rgb(0, 255, 247);
+  height: 60px;
+  rotate: 5deg;
+  -webkit-text-stroke: 2px white;
+  border-radius: 39% 28% 64% 20% / 28% 16% 57% 66%;
+  -webkit-border-radius: 39% 28% 64% 20% / 28% 16% 57% 66%;
+  -moz-border-radius: 39% 28% 64% 20% / 28% 16% 57% 66%;
+  -ms-border-radius: 39% 28% 64% 20% / 28% 16% 57% 66%;
+  -o-border-radius: 39% 28% 64% 20% / 28% 16% 57% 66%;
+}
+
+.letter4 {
+  background-color: rgb(115, 0, 255);
+  height: 60px;
+  rotate: -10deg;
+  -webkit-text-stroke: 2px black;
+  border-radius: 66% 25% 75% 25% / 46% 27% 69% 54%;
+  -webkit-border-radius: 66% 25% 75% 25% / 46% 27% 69% 54%;
+  -moz-border-radius: 66% 25% 75% 25% / 46% 27% 69% 54%;
+  -ms-border-radius: 66% 25% 75% 25% / 46% 27% 69% 54%;
+  -o-border-radius: 66% 25% 75% 25% / 46% 27% 69% 54%;
+}
+
+.letter5 {
+  background-color: purple;
+  height: 60px;
+  rotate: 5deg;
+  -webkit-text-stroke: 2px pink;
+  border-radius: 41% 59% 49% 49% / 48% 45% 54% 46%;
+  -webkit-border-radius: 41% 59% 49% 49% / 48% 45% 54% 46%;
+  -moz-border-radius: 41% 59% 49% 49% / 48% 45% 54% 46%;
+  -ms-border-radius: 41% 59% 49% 49% / 48% 45% 54% 46%;
+  -o-border-radius: 41% 59% 49% 49% / 48% 45% 54% 46%;
+}
+
+.letter6 {
+  background-color: orange;
+  height: 60px;
+  rotate: -10deg;
+  -webkit-text-stroke: 2px green;
+  border-radius: 25% 69% 25% 64% / 25% 48% 25% 59%;
+  -webkit-border-radius: 25% 69% 25% 64% / 25% 48% 25% 59%;
+  -moz-border-radius: 25% 69% 25% 64% / 25% 48% 25% 59%;
+  -ms-border-radius: 25% 69% 25% 64% / 25% 48% 25% 59%;
+  -o-border-radius: 25% 69% 25% 64% / 25% 48% 25% 59%;
+}
+
+.letter7 {
+  background-color: rgb(247, 0, 255);
+  height: 60px;
+  rotate: 5deg;
+  -webkit-text-stroke: 2px purple;
+  border-radius: 41% 59% 24% 25% / 71% 75% 25% 25%;
+  -webkit-border-radius: 41% 59% 24% 25% / 71% 75% 25% 25%;
+  -moz-border-radius: 41% 59% 24% 25% / 71% 75% 25% 25%;
+  -ms-border-radius: 41% 59% 24% 25% / 71% 75% 25% 25%;
+  -o-border-radius: 41% 59% 24% 25% / 71% 75% 25% 25%;
+}
+
+.letter8 {
+  background-color: rgb(0, 173, 167);
+  height: 60px;
+  rotate: -5deg;
+  -webkit-text-stroke: 2px yellow;
+  border-radius: 41% 59% 60% 40% / 71% 21% 79% 25%;
+  -webkit-border-radius: 41% 59% 60% 40% / 71% 21% 79% 25%;
+  -moz-border-radius: 41% 59% 60% 40% / 71% 21% 79% 25%;
+  -ms-border-radius: 41% 59% 60% 40% / 71% 21% 79% 25%;
+  -o-border-radius: 41% 59% 60% 40% / 71% 21% 79% 25%;
+}
+
+.letter9 {
+  background-color: rgb(0, 255, 0);
+  height: 60px;
+  rotate: 5deg;
+  -webkit-text-stroke: 2px red;
+  border-radius: 41% 59% 25% 71% / 71% 59% 41% 25%;
+  -webkit-border-radius: 41% 59% 25% 71% / 71% 59% 41% 25%;
+  -moz-border-radius: 41% 59% 25% 71% / 71% 59% 41% 25%;
+  -ms-border-radius: 41% 59% 25% 71% / 71% 59% 41% 25%;
+  -o-border-radius: 41% 59% 25% 71% / 71% 59% 41% 25%;
+}
+
+.letter10 {
+  background-color: rgb(255, 255, 0);
+  height: 60px;
+  rotate: -10deg;
+  -webkit-text-stroke: 2px blue;
+  border-radius: 41% 59% 25% 71% / 35% 59% 41% 60%;
+  -webkit-border-radius: 41% 59% 25% 71% / 35% 59% 41% 60%;
+  -moz-border-radius: 41% 59% 25% 71% / 35% 59% 41% 60%;
+  -ms-border-radius: 41% 59% 25% 71% / 35% 59% 41% 60%;
+  -o-border-radius: 41% 59% 25% 71% / 35% 59% 41% 60%;
+}
+
+.letter11 {
+  background-color: rgb(203, 192, 255);
+  height: 60px;
+  rotate: 10deg;
+  -webkit-text-stroke: 2px green;
+  border-radius: 33% 67% 25% 75% / 23% 59% 41% 76%;
+  -webkit-border-radius: 33% 67% 25% 75% / 23% 59% 41% 76%;
+  -moz-border-radius: 33% 67% 25% 75% / 23% 59% 41% 76%;
+  -ms-border-radius: 33% 67% 25% 75% / 23% 59% 41% 76%;
+  -o-border-radius: 33% 67% 25% 75% / 23% 59% 41% 76%;
+}
+
+.letter12 {
+  background-color: rgb(134, 134, 134);
+  height: 60px;
+  rotate: -5deg;
+  -webkit-text-stroke: 2px orange;
+  border-radius: 53% 47% 25% 75% / 41% 79% 21% 59%;
+  -webkit-border-radius: 53% 47% 25% 75% / 41% 79% 21% 59%;
+  -moz-border-radius: 53% 47% 25% 75% / 41% 79% 21% 59%;
+  -ms-border-radius: 53% 47% 25% 75% / 41% 79% 21% 59%;
+  -o-border-radius: 53% 47% 25% 75% / 41% 79% 21% 59%;
+}
+
+.letter13 {
+  background-color: pink;
+  height: 60px;
+  rotate: 10deg;
+  -webkit-text-stroke: 2px black;
+  border-radius: 53% 47% 25% 75% / 41% 41% 48% 59%;
+  -webkit-border-radius: 53% 47% 25% 75% / 41% 41% 48% 59%;
+  -moz-border-radius: 53% 47% 25% 75% / 41% 41% 48% 59%;
+  -ms-border-radius: 53% 47% 25% 75% / 41% 41% 48% 59%;
+  -o-border-radius: 53% 47% 25% 75% / 41% 41% 48% 59%;
+}
+
+.letter14 {
+  background-color: rgb(255, 151, 99);
+  height: 60px;
+  rotate: -10deg;
+  -webkit-text-stroke: 2px white;
+  border-radius: 38% 62% 57% 42% / 42% 52% 48% 57%;
+  -webkit-border-radius: 38% 62% 57% 42% / 42% 52% 48% 57%;
+  -moz-border-radius: 38% 62% 57% 42% / 42% 52% 48% 57%;
+  -ms-border-radius: 38% 62% 57% 42% / 42% 52% 48% 57%;
+  -o-border-radius: 38% 62% 57% 42% / 42% 52% 48% 57%;
+}
+
+.hover:hover .letter1 {
+	background-color: red;
+	height: 100px;
+	rotate: 0deg;
+	color: rgb(255, 242, 0);
+  }
+  
+  .hover:hover .letter2 {
+	background-color: green;
+	height: 100px;
+	rotate: -0deg;
+	color: rgb(192, 217, 255);
+  }
+  
+  .hover:hover .letter3 {
+	background-color: rgb(0, 255, 247);
+	height: 100px;
+	rotate: 0deg;
+	color: white;
+  }
+  
+  .hover:hover .letter4 {
+	background-color: rgb(115, 0, 255);
+	height: 100px;
+	rotate: 0deg;
+	color: rgb(1, 255, 18);
+  }
+  
+  .hover:hover .letter5 {
+	background-color: purple;
+	height: 100px;
+	rotate: 0deg;
+	color: pink;
+  }
+  
+  .hover:hover .letter6 {
+	background-color: orange;
+	height: 100px;
+	rotate: 0deg;
+	color: green;
+  }
+  
+  .hover:hover .letter7 {
+	background-color: rgb(247, 0, 255);
+	height: 100px;
+	rotate: 0deg;
+	color: purple;
+  }
+  
+  .hover:hover .letter8 {
+	background-color: rgb(0, 173, 167);
+	height: 100px;
+	rotate: 0deg;
+	color: yellow;
+  }
+  
+  .hover:hover .letter9 {
+	background-color: rgb(0, 255, 0);
+	height: 100px;
+	rotate: 0deg;
+	color: red;
+  }
+  
+  .hover:hover .letter10 {
+	background-color: rgb(255, 255, 0);
+	height: 100px;
+	rotate: 0deg;
+	color: blue;
+  }
+  
+  .hover:hover .letter11 {
+	background-color: rgb(203, 192, 255);
+	height: 100px;
+	rotate: 0deg;
+	color: green;
+  }
+  
+  .hover:hover .letter12 {
+	background-color: rgb(134, 134, 134);
+	height: 100px;
+	rotate: 0deg;
+	color: orange;
+  }
+  
+  .hover:hover .letter13 {
+	background-color: pink;
+	height: 100px;
+	rotate: 0deg;
+	color: rgb(0, 128, 255);
+  }
+  
+  .hover:hover .letter14 {
+	background-color: rgb(255, 151, 99);
+	height: 100px;
+	rotate: 0deg;
+	color: white;
+  }
+
   
 
   /*scroller*/
