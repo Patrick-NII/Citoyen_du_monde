@@ -64,7 +64,6 @@ footer {
 
 
 #myNavbar .nav li {
-	position: re;
 	background-color: transparent;
 	margin-left: 3px;
 	width: 8rem;
@@ -74,7 +73,7 @@ footer {
 #myNavbar .nav a {
 	text-transform: uppercase;
 	background-color: #00549000;
-	color: #ffffff;
+	color: #1da0f2f2;
 	font-family: 'Louis';
 	display: inline-block;
 	padding: 1.5rem 0.5rem;
@@ -128,9 +127,9 @@ footer {
 	-o-transform: translateX(-50%);
 }
 
-  #myNavbar .nav a:hover{
+  #myNavbar .nav a:hover:not(.active) {
 	position: absolute;
-	background-color: #1da0f2d0;
+	background-color: #1da0f2;
 	color: #f8f8f8;
 	width: 8rem;
 	height: 6rem;
@@ -152,8 +151,7 @@ footer {
   #myNavbar .nav a:is(:link, :active, :visited).active {
 	position: absolute;
 	top: 0;
-	background-color: #1da0f2d0;
-	color: #f8f8f8;
+	color: #ffa462;
 	width: 8rem;
 	height: 6rem;
 	font-size: 1.4rem;
@@ -165,30 +163,24 @@ footer {
 	-o-transition: none;
 }
 
-  
   .nav a::after{
 	content: '';
 	position: absolute;
-	background-color: #1DA1F2;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
 }
-  
-  .nav a:hover:not(.active)::after {
+
+  .nav a:hover::after{
 	transform: translateY(-12px);
 	-webkit-transform: translateY(-12px);
 	-moz-transform: translateY(-12px);
 	-ms-transform: translateY(-12px);
 	-o-transform: translateY(-12px);
 }
-.navbar-default .navbar-nav .nav-item {
-	background-color: #005490;
-	color: #f8f8f8;
 
-}
 
 .nav .navbord {
 	position: relative;
