@@ -52,37 +52,43 @@ footer {
 .navbar-brand img {
 	position: absolute;
     left: 7%;
-    top: 0.5rem;
+    top: 3.5rem;
 	width: 4rem;
 }
 .navbar-fixed-top {
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 255, 255, 0);
+	border: none;
+	padding: 30px 10px;
 }
 
 #myNavbar .nav li {
 	background-color: transparent;
 	margin-left: 6px;
 	width: 8rem;
-	height: 3.5rem;
+	height: 8rem;
 	z-index: 1;
 }
 #myNavbar .nav a {
 	text-transform: uppercase;
-	color: #005490;
+	color: #ffffff;
 	font-family: 'Louis';
 	display: inline-block;
 	padding: 1.5rem 0.5rem;
 	text-align: center;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	height: 5rem;
 	width: 8rem;
-	border-radius: 0 0 8px 8px;
+	border-radius: 15%;
 	transition: all 0.1s ease;
 	position: relative;
 	-webkit-transition: all 0.1s ease;
 	-moz-transition: all 0.1s ease;
 	-ms-transition: all 0.1s ease;
 	-o-transition: all 0.1s ease;
+	-webkit-border-radius: 15%;
+	-moz-border-radius: 15%;
+	-ms-border-radius: 15%;
+	-o-border-radius: 15%;
 }
   
 .navbar-nav li a i {
@@ -119,27 +125,34 @@ footer {
 }
 
   #myNavbar .nav a:hover {
-	background-color: #005490;
+	position: absolute;
+	background-color: #1da0f200;
 	color: #f8f8f8;
 	width: 8rem;
 	height: 6rem;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	margin-left: 0;
 	transition: all 0.4s ease-in-out;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-ms-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
+	border-radius: 15%;
+	-webkit-border-radius: 15%;
+	-moz-border-radius: 15%;
+	-ms-border-radius: 15%;
+	-o-border-radius: 15%;
 }
 
 
   #myNavbar .nav a:is(:link, :active, :visited).active {
-
-	background-color: #005490;
+	position: absolute;
+	top: 0;
+	background-color: #00549000;
 	color: #f8f8f8;
 	width: 8rem;
 	height: 6rem;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	margin-left: 0;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -180,7 +193,6 @@ section {
 #home {
 	position: relative;
 	background-image: url('./Img/sourire-d-enfant.jpg');
-	background-color: rgba(255, 255, 255, 0.3);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -197,14 +209,15 @@ section {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.1);
+	background: linear-gradient( rgba(65, 216, 221, 0.5), rgba(85, 131, 238, 0.9));
+  
   }
   
  
   
 .concept-two {
 	position: absolute;
-	top: 50%;
+	top: 35%;
 	transform: translateY(-50%);
 	left: 0;
 	width: 100%;
@@ -212,7 +225,6 @@ section {
 	align-items: center;
 	justify-content: center;
 	padding: 5em 15em;
-	background-color: rgba(255, 251, 0, 0.1);
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
