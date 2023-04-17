@@ -315,7 +315,7 @@ section {
   
 .concept-two {
 	position: absolute;
-	top: 28%;
+	top: 82%;
 	transform: translateY(-50%);
 	left: 0;
 	width: 100%;
@@ -629,7 +629,7 @@ section {
 
 #about .about-content{
 	position: absolute;
-	top: 65%;
+	top: 45%;
 	left: 100px;
 	width: 45rem;
 	transform: translateY(-50%);
