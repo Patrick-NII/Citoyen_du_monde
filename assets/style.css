@@ -152,6 +152,7 @@ footer {
 	position: absolute;
 	top: 0;
 	color: #ffa462;
+	background-color: #0f6092;
 	width: 8rem;
 	height: 6rem;
 	font-size: 1.4rem;
@@ -174,11 +175,11 @@ footer {
 }
 
   .nav a:hover::after{
-	transform: translateY(-12px);
-	-webkit-transform: translateY(-12px);
-	-moz-transform: translateY(-12px);
-	-ms-transform: translateY(-12px);
-	-o-transform: translateY(-12px);
+	transform: translateY(12px);
+	-webkit-transform: translateY(12px);
+	-moz-transform: translateY(12px);
+	-ms-transform: translateY(12px);
+	-o-transform: translateY(12px);
 }
 
 
