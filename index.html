@@ -15,6 +15,8 @@ l
     integrity="sha512-72J/6uO7VBBbA/9Y7hfrVLGcHrPw+zOujj2STjo1tFj+GweDv4O4LQ8ys/XtE/Yx+UXwvJfW+WZ8C+wj+1iqPg=="
     crossorigin="anonymous" />
   <title>Citoyen du Monde</title>
+  <!-- Lien vers Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <!-- Lien vers Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- Lien vers notre CSS -->
@@ -80,11 +82,11 @@ l
       <a href="#"><span class="iconify" data-icon="mdi:youtube"></span></a>
     </div>
 
-    <section class="scroller" class="container" id="about">
+    <section class="scroller mySwiper" class="container" id="about">
 
       
 
-      <div class="about-content">
+      <div class="about-content typewriter">
         <h2>About us</h2>
 
         <p>Nous sommes une organisation à but non lucratif
@@ -99,7 +101,74 @@ l
           Nous travaillons également avec les gouvernements locaux
           pour améliorer les lois et les politiques qui affectent les orphelins.</p>
       </div>
-     
+      <div class="swiper-wrapper">
+
+        <div class="card swiper-slide">
+          <div class="card__image">
+            <img src="./assets/Img/pexels-karolina-grabowska-8528852.jpg" alt="card image">
+          </div>
+  
+          <div class="card__content">
+            <span class="card__title">Resp. collecte de fonds</span>
+            <span class="card__name">Vanessa Martinez</span>
+            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+            <button class="card__btn">View More</button>
+          </div>
+        </div>
+  
+        <div class="card swiper-slide">
+          <div class="card__image">
+            <img src="./assets/Img/pexels-emmy.jpg" alt="card image">
+          </div>
+  
+          <div class="card__content">
+            <span class="card__title">Resp. partenariats & stratégie</span>
+            <span class="card__name">Tarija Kwame</span>
+            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+            <button class="card__btn">View More</button>
+          </div>
+        </div>
+  
+        <div class="card swiper-slide">
+          <div class="card__image">
+            <img src="./assets/Img/pexels-monstera-5384445.jpg" alt="card image">
+          </div>
+  
+          <div class="card__content">
+            <span class="card__title">Web Developer</span>
+            <span class="card__name">Steven Yeun</span>
+            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+            <button class="card__btn">View More</button>
+          </div>
+        </div>
+  
+        <div class="card swiper-slide">
+          <div class="card__image">
+            <img src="./assets/Img/pexels-sound-on-3760707.jpg" alt="card image">
+          </div>
+  
+          <div class="card__content">
+            <span class="card__title">Dir. ressources humaines</span>
+            <span class="card__name">Kelsey West</span>
+            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+            <button class="card__btn">View More</button>
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="card__image">
+            <img src="./assets/Img/pexels-bankole-adeoni-4997459-removebg-preview.png" alt="card image">
+          </div>
+  
+          <div class="card__content">
+            <span class="card__title">Resp. administratif & Financier</span>
+            <span class="card__name">Bankole Iwanio</span>
+            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+            <button class="card__btn">View More</button>
+          </div>
+        </div>
+  
+      </div>
 
     </section>
 
@@ -221,6 +290,27 @@ l
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Lien vers Bootstrap JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
 </body>
 
 </html>
