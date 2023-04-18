@@ -76,7 +76,6 @@ footer {
 }
 #myNavbar .nav > .nav-item > a {
 	text-transform: uppercase;
-	background-color: #00549000;
 	color: #0f6092;
 	font-family: 'Louis';
 	display: inline-block;
@@ -190,8 +189,8 @@ footer {
 .nav > .navbord {
 	position: relative;
 	display: inline-block;
-	background-color: #f0f0f0;
-	color: #0f6092;
+	background-color: #0f6092;
+	color: #ff8300;
 	border: none;
 	width: 10rem;
 	height: 4rem;
@@ -213,13 +212,10 @@ footer {
 }
 
 .nav .navbord:hover {
-	background-color: #0f6092;
+	background-color: #005490;
 	color: #ff8300;
 }
-.nav .navbord a:hover {
-	color: #ff8300;
-	text-decoration: none;
-}
+
 
 .connect {
 	position: relative;
@@ -428,8 +424,8 @@ section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #5583ee;
-	color: #f0f0f0;
+	background-color: #0f6092;
+	color: #ff8300;
 	border: none;
 	width: 14rem;
 	height: 4rem;
@@ -447,7 +443,6 @@ section {
  
 .btn-accl a:hover {
 	background-color: #005490;
-	color: #fff;
   }
 
   .fade {
@@ -465,9 +460,6 @@ section {
 	animation-delay: 5000ms;
 }
   
-  @keyframes fade {
-}
-
 @keyframes fade {
 	0% {
 	  opacity: 0;
@@ -862,7 +854,7 @@ form .custom-file-label span {
 }
 footer .container p {
 	position: absolute;
-	color: #f0f0f0;
+	color: #ff8300;
 	left: 50%;
 	transform: translateX(-50%);
 	bottom: 20px;
