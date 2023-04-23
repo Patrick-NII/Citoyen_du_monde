@@ -63,19 +63,33 @@ footer {
 }
 .navbar-brand img {
 	position: absolute;
-    left: 7%;
-    top: 3.5rem;
+	left: 7%;
+	top: 2rem;
 	width: 4rem;
 }
 .navbar-fixed-top {
 	position: fixed;
-	background-color: rgba(255, 255, 255, 0);
+	width: 95%;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(136, 255, 230, 0);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 	border: none;
-	padding: 30px 10px;
+	transition: all 0.4s ease-in-out;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	border: 1px solid rgba(136, 255, 230, 0.04);
 }
 
 
 #myNavbar .nav li {
+	position: relative;
+	top: 1.5rem;
 	background-color: transparent;
 	margin-left: 3px;
 	width: 8rem;
@@ -123,6 +137,7 @@ footer {
 	-ms-transition: transform 0.2s ease-in-out;
 	-o-transition: transform 0.2s ease-in-out;
 }
+
 
 .navbar-nav li a:hover i {
 	position: absolute;
@@ -202,6 +217,7 @@ footer {
 	border: none;
 	width: 10rem;
 	height: 4rem;
+	top: 1.8rem;
 	text-transform: uppercase;
 	right: -20%;
 	font-size: 1.2rem;
