@@ -1023,7 +1023,7 @@ form .custom-file-label span {
 }
 footer .container p {
 	position: absolute;
-	color: #ff8300;
+	color: #dbdbdb;
 	left: 50%;
 	transform: translateX(-50%);
 	bottom: 20px;
