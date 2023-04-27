@@ -92,6 +92,11 @@ footer {
 	-o-border-radius: 20px;
 	border: 1px solid rgba(136, 255, 230, 0.04);
 }
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #ffffff;
+    background-color: #41d8dd;
+	box-shadow: 0 2px 5px rgba(84, 84, 84, 0.5);
+}
 
 
 #myNavbar .nav li {
@@ -159,6 +164,7 @@ footer {
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
 }
+
 
   #myNavbar .nav > .nav-item > a:hover:not(.active) {
 	position: absolute;
@@ -1115,14 +1121,25 @@ section {
   } */
   
   /*================== Contact ===================*/
+  #contact {
+	position : relative;
+	z-index: -1;
+	background: linear-gradient(#ffffff 40%, #5583ee 40%);
+  }
+  
   form {
-	max-width: 800px;
-	margin: 40px auto;
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	padding: 20px;
-	border: 1px solid var(--primary-color);
+	border: 1px solid rgba(205, 253, 255, 0.3);
 	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-	background-color: #f0f0f0;
+	box-shadow: 4px 4px 10px 0 rgba(65, 216, 221, 0.347);
+	background-color: rgba(85, 131, 255, 0.088);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	color: #ffffff;
   }
   
   form label {
@@ -1148,12 +1165,12 @@ section {
   form select:focus,
   form textarea:focus {
 	outline: none;
-	border-color: var(--primary-color);
+	border-color: transparent;
 	box-shadow: 0 0 5px rgba(0, 84, 144, 0.5);
   }
   
   form .custom-file-input:focus~.custom-file-label {
-	border-color: var(--primary-color);
+	border-color: transparent;
 	box-shadow: 0 0 5px rgba(0, 84, 144, 0.5);
   }
   
@@ -1172,7 +1189,7 @@ section {
   }
   
   form button[type="submit"] {
-	background-color: var(--primary-color);
+	background-color: #41d8dd;
 	border: none;
 	border-radius: 5px;
 	color: #f0f0f0;
@@ -1183,7 +1200,7 @@ section {
   }
   
   form button[type="submit"]:hover {
-	background-color: var(--secondary-color);
+	background-color: #5500ff;
   }
   
   /* Styles spécifiques aux éléments du formulaire */
@@ -1302,18 +1319,8 @@ form .custom-file-label span {
 	display: block;
   }
 
-  /* styles spécifiques au Button validé */
   
-  
-
-  footer {
-	position: relative;
-	background-color: #005490;
-	width: 100vw;
-	height: 100vh;
-	z-index: 5;
-}
-footer .container p {
+#contact .cont p {
 	position: absolute;
 	color: #dbdbdb;
 	left: 50%;
@@ -1323,6 +1330,7 @@ footer .container p {
 	text-transform: uppercase;
 	width: auto;
 	white-space: nowrap;
+	font-size: 1rem;
 }
   
   

@@ -16,6 +16,7 @@ menuItems.forEach(function(item) {
 
 
 
+
 // sélectionner l'élément flèche
 const arrow = document.querySelector('.arrows');
 
