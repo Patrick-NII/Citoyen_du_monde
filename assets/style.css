@@ -732,6 +732,7 @@ section {
 /*======================= Event ======================*/
 #event {
 	position: relative;
+	top: -0.815px;
 	width: 100%;
 	height: 100%;
 	background: #41d8dd;
@@ -987,16 +988,133 @@ section {
 	animation-delay: 0s;
   }
 
-  /* Couleurs principales */
+
+  /*================== Dons ===================*/
+  #donation {
+	position : relative;
+	top : -20px;
+	width: 100%;
+	height: 100%;
+	
+  }
+  .donate{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	width: 90%;
+	height: 90%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	background: url('./Img/pexels-julia-m-cameron-6994992.jpg') no-repeat center center fixed;
+	background-size: cover;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.donate > .dns {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #ffffff;
+	font-size: 1em;
+	width: 48%;
+} 
+
+.donate .btn {
+	position: absolute;
+	width: 73%;
+	height: 50%;
+	color: transparent;
+	border: none;
+	top: 37%;
+	left: 13%;
+	transform: translate(-50%, -50%);
+	background: transparent;
+	transform: rotate(-2.2deg);
+	-webkit-transform: rotate(-2.2deg);
+	-moz-transform: rotate(-2.2deg);
+	-ms-transform: rotate(-2.2deg);
+	-o-transform: rotate(-2.2deg);
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5em;
+	font-family: 'Bronson', sans-serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	-webkit-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+	-moz-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+	-ms-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+	-o-transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+.donate .btn:hover {
+	background: rgba(255, 255, 255, 0.4);
+	color: #5500ff;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.397);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+
+.btn:hover:before {
+	transition-delay: .1s;
+}
+
+.btn:hover:after {
+	background: rgba(255, 255, 255, 0);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	transition-delay: .015s;
+}
+
+
+.btn-lg:after {
+	bottom: 0;
+	left: 0;
+	height: 0;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.btn-lg:hover:before {
+	left: 0;
+	width: 100%;
+}
+
+.btn-lg:hover:after {
+	top: 0;
+	height: 100%;
+}
+
+
+
+
+  /* Couleurs principales
 :root {
 	--primary-color: #005490;
 	--secondary-color: #0074bd;
 	--success-color: #28a745;
 	--warning-color: #ffc107;
 	--danger-color: #dc3545;
-  }
+  } */
   
-  /* Style du formulaire */
+  /*================== Contact ===================*/
   form {
 	max-width: 800px;
 	margin: 40px auto;
