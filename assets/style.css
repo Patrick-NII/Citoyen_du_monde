@@ -672,7 +672,7 @@ section {
   .swiper-slide:not(.swiper-slide-active){
 	filter: blur(0px);
 	/*background-color: #005490;
-	pourlemodenuit*/:;
+	pourlemodenuit*/
 	-webkit-filter: blur(0px);
 }
   
