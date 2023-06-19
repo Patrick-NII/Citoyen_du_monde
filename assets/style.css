@@ -655,17 +655,25 @@ section {
 	border-radius: 2em;
 	box-shadow: 0 0 2em rgba(0, 0, 0, .2);
 	padding: 2em 1em;
-  
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-  
 	margin: 0 2em;
-  }
+	transition: transform 0.5s ease;
+	-webkit-transition: transform 0.5s ease;
+	-moz-transition: transform 0.5s ease;
+	-ms-transition: transform 0.5s ease;
+	-o-transition: transform 0.5s ease;
+}
+  .card:hover {
+	transform: translateY(-20px);
+}
   
   .swiper-slide:not(.swiper-slide-active){
-	filter: blur(1px);
-	/* background-color: #005490;  pour le mode nuit  */
+	filter: blur(0px);
+	/*background-color: #005490;
+	pourlemodenuit*/:;
+	-webkit-filter: blur(0px);
 }
   
   .card__image{
@@ -1133,6 +1141,7 @@ section {
 	justify-content: center;
 	margin-top: 0px;
 	color: #0f6092;
+	
   }
   
   .form-container {
@@ -1187,7 +1196,9 @@ section {
 	outline: none;
   }
   
-  .form-group input[type="text"]:focus + label{
+  .form-group input[type="text"]:focus + label,
+  .form-group input[type="text"].not-empty + label,
+  .form-group textarea.not-empty + label{
 	position: relative;
 	width: 100px;
 	opacity: 1;
@@ -1219,6 +1230,7 @@ textarea {
 	border-radius: 4px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
+	z-index: 3;
   }
   
   .form-group input[type="submit"]:hover {
@@ -1231,4 +1243,23 @@ textarea {
 	outline: none;
 	background-color: #d2fffa;
 	opacity: 1;
+  }
+
+
+  .cont {
+	display: flex;
+	padding: 20px;
+	bottom: 1px;
+	background-color: #41d8dd;
+	height: 40%;
+	width: 100%;
+	z-index: 0;
+  }
+
+  .cont p {
+	position: absolute;
+	top: 98%;
+	left: 50%;
+	transform: translateX(-50%);
+
   }
