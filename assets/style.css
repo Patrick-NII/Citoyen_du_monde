@@ -1125,41 +1125,110 @@ section {
   } */
   
   /*================== Contact ===================*/
-  #contact {
-	position : relative;
-	z-index: -1;
-	background: linear-gradient(#ffffff 40%, #5583ee 40%);
+
+  
+  #contact h1 {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-top: 0px;
+	color: #0f6092;
   }
   
-  form {
-	position: absolute;
-	top: 53%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  .form-container {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	max-width: 500px;
+	margin: 0 auto;
 	padding: 20px;
-	border: 1px solid rgba(205, 253, 255, 0.3);
+	background-color: #ffffff;
 	border-radius: 5px;
-	box-shadow: 4px 4px 10px 0 rgba(65, 216, 221, 0.347);
-	background-color: rgba(85, 131, 255, 0.088);
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-	color: #ffffff;
-	font-family: 'LouisR', sans-serif;
   }
   
-#contact .cont p {
-	position: absolute;
-	color: #dbdbdb;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 20px;
-	letter-spacing: 0.5rem;
-	text-transform: uppercase;
-	width: auto;
-	white-space: nowrap;
-	font-size: 1rem;
+  .form-group {
+	margin-bottom: 15px;
+  }
+  
+  .form-group label {
+	position: relative;
+	display: block;
+	margin-left: 20px;
+	font-weight: bold;
+	opacity: 0.5;
+	transform: translateY(-30px);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	-webkit-transform: translateY(-30px);
+	-moz-transform: translateY(-30px);
+	-ms-transform: translateY(-30px);
+	-o-transform: translateY(-30px);
+}
+   .msg {
+	display: block;
+	margin-left: 20px;
+	margin-top: -100px;
+	font-weight: bold;
+	opacity: 0.5;
+	transition: opacity 0.3s ease, transform 0.3s ease;
 }
   
+  .form-group input[type="text"],
+  .form-group textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	transition: border-color 0.3s ease;
+  }
   
+  .form-group input[type="text"]:focus,
+  .form-group textarea:focus {
+	border-color: #5583ee;
+	outline: none;
+  }
   
+  .form-group input[type="text"]:focus + label{
+	position: relative;
+	width: 100px;
+	opacity: 1;
+	background: white;
+	color: #5583ee;
+	transform: scale(0.9) translateY(-60px);
+	-webkit-transform: scale(0.9) translateY(-60px);
+	-moz-transform: scale(0.9) translateY(-60px);
+	-ms-transform: scale(0.9) translateY(-60px);
+	-o-transform: scale(0.9) translateY(-60px);
+}
+.form-group textarea:focus + label {
+	opacity: 0;
+}
+textarea {
+	resize: none;
+	width: 100% !important;
+	height: 20%!important;
+}
   
+  .form-group input[type="submit"] {
+	position: relative;
+	background-color: #0f6092;
+	color: #fff;
+	left: 185px;
+	padding: 10px 20px;
+	margin-top: 100px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .form-group input[type="submit"]:hover {
+	background-color: #005490;
+
+  }
+  .form-group input[type="text"],
+  .form-group textarea {
+	border-color: transparent;
+	outline: none;
+	background-color: #d2fffa;
+	opacity: 1;
+  }
