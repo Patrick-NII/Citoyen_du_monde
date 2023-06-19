@@ -3,105 +3,280 @@ l
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Citoyen du Monde</title>
-    <!-- Lien vers Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- Lien vers notre CSS -->
-    <link rel="stylesheet" href="assets/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/thinline.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
+  <link rel="icon" type="image/ico" href="assets/Img/watercolour-1768921_1920.jpg" />
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-72J/6uO7VBBbA/9Y7hfrVLGcHrPw+zOujj2STjo1tFj+GweDv4O4LQ8ys/XtE/Yx+UXwvJfW+WZ8C+wj+1iqPg=="
+    crossorigin="anonymous" />
+  <title>Citoyen du Monde</title>
+  <!-- Lien vers Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <!-- Lien vers Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Lien vers notre CSS -->
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- Lien vers responsive CSS -->
+  <link rel="stylesheet" href="./assets/resize.css">
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Citoyen du Monde</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="#">Projets</a></li>
-                    <li><a href="#">Faire un don</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home"><img src="assets/Img/community-150125_1280.png" class="fade-in"></a>
         </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item"><a class="active" href="#home"><i class="noMove"></i>Home</a></li>
+            <li class="nav-item"><a href="#about"><i class="uil uil-user"></i>About</a></li>
+            <li class="nav-item"><a href="#event"><i class="uil uil-calendar-alt"></i>Event</a></li>
+            <li class="nav-item"><a href="#donation"><i class="uil uil-heart-alt"></i>Dons</a></li>
+            <li class="nav-item"><a href="#blog"><i class="uil uil-image"></i>Blog</a></li>
+            <li class="nav-item"><a href="#contact"><i class="uil uil-message"></i>Contact</a></li>
+            <a href="#sign" class="navbord"><span class="connect">Members</span></a>
+            <a href="#donation" class="navbord"><span class="dons">Donate</span></a>
+          </ul>
+        </div>
+
+      </div>
+
     </nav>
   </header>
 
-<main>
-    <section class="jumbotron">
-        <div class="container">
-            <h1>Bienvenue dans l'Association pour Orphelins</h1>
-            <p>Nous sommes une organisation qui s'occupe des orphelins de toutes âges, en leur offrant une structure ou ils peuvent s'épanouir...</p>
+  <div class="nav-top"></div>
+
+  <main id="mainer">
+    <section class="jumbotron" id="home">
+      <div id="back-home-container">
+        <div class="back-home"></div>
+      </div>
+      <div class="overlay">
+        <h1><span class="ha1">Offrez</span><br> <span class="hb1">un</span> <br> <span class="hc1">future.</span></h1>
+        <p>Chaque <span>don</span> est une action et chaque action <span>est</span> un pas vers l'<span>avenir</span></p>
+        <div class="btn-accl fade">
+          <a href="#about">en savoir plus</a>
+          <a href="#contact">nous rejoindre</a>
         </div>
+      </div>
     </section>
+    
 
-    <section class="container">
-        <h2>Nos Projets</h2>
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="./assets/Img/child-1864718_1920.jpg" alt="Projet 1">
-                    <div class="caption">
-                        <h3>Projet 1</h3>
-                        <p>Atelier de mise en éveil pour les plus jeunes.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">En savoir plus</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="./assets/Img/children-593313_1920.jpg" alt="Projet 2">
-                    <div class="caption">
-                        <h3>Projet 2</h3>
-                        <p>Atelier de programmation et develloppement web.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">En savoir plus</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <img src="./assets/Img/people-2616695_1920.jpg" alt="Projet 3">
-                    <div class="caption">
-                        <h3>Projet 2</h3>
-                        <p>Sorties et découvertes.</p>
-                        <p><a href="#" class="btn btn-primary" role="button">En savoir plus</a></p>
-                </div>
-			</div>
-		</section>
+    <div class="social-icons">
+      <a href="#"><span class="iconify" data-icon="mdi:facebook"></span></a>
+      <a href="#"><span class="iconify" data-icon="mdi:twitter"></span></a>
+      <a href="#"><span class="iconify" data-icon="mdi:instagram"></span></a>
+      <a href="#"><span class="iconify" data-icon="mdi:youtube"></span></a>
+    </div>
 
-		<section class="container">
-                    <h2>Qui sommes-nous ?</h2>
-                    <p>Nous sommes une organisation à but non lucratif qui se consacre à aider les orphelins à travers le monde. Nous croyons que tous les enfants méritent une chance égale dans la vie, peu importe leur situation familiale.</p>
-                    <p>Nos projets incluent la fourniture de nourriture, de soins de santé, d'éducation et de logement pour les orphelins. Nous travaillons également avec les gouvernements locaux pour améliorer les lois et les politiques qui affectent les orphelins.</p>
-    </section>
+    <section class="scroller mySwiper" class="container" id="about">
 
-    <section class="container">
-        <h2>Faire un don</h2>
-        <p>Nous sommes toujours reconnaissants des dons que nous recevons pour aider à soutenir notre travail. Si vous souhaitez faire un don, veuillez cliquer sur le bouton ci-dessous pour être redirigé vers notre page de dons.</p>
-        <p><a href="#" class="btn btn-primary btn-lg" role="button">Faire un don</a></p>
-    </section>
+      
 
-    <footer>
-        <div class="container">
-            <p>&copy; Association des Orphelins 2023</p>
+      <div class="about-content typewriter">
+        <h2><span>About us</span></h2>
+
+        <div class="weare">
+          <p>Nous sommes une organisation à but non lucratif
+            qui se consacre à aider les orphelins à travers le monde. <br>
+            Nous croyons que tous les enfants méritent une chance égale
+            dans la vie, peu importe leur situation familiale.<br>
+            Nos projets incluent la fourniture de nourriture,
+            de soins de santé, d'éducation et de logement. <br>
+            Nous travaillons également avec les gouvernements locaux
+            pour améliorer les lois et les politiques qui affectent les enfants.</p>
         </div>
-    </footer>
-</main>
+      </div>
+      <div class="swiper-wrapper">
 
-<!-- Lien vers jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- Lien vers Bootstrap JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <div class="card swiper-slide">
+          <div class="card__image">
+            <img src="./assets/Img/pexels-karolina-grabowska-8528852.jpg" alt="card image">
+          </div>
+  
+          <div class="card__content">
+            <span class="card__title">Collecte de fonds</span>
+            <span class="card__name">Vanessa Martinez</span>
+            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+            <button class="card__btn">View More</button>
+          </div>
+        </div>
+  
+        <div class="card swiper-slide">
+          <div class="card__image">
+            <img src="./assets/Img/pexels-emmy.jpg" alt="card image">
+          </div>
+  
+          <div class="card__content">
+            <span class="card__title">Partenariats & stratégie</span>
+            <span class="card__name">Tarija Kwame</span>
+            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+            <button class="card__btn">View More</button>
+          </div>
+        </div>
+  
+        <div class="card swiper-slide">
+          <div class="card__image">
+            <img src="./assets/Img/pexels-monstera-5384445.jpg" alt="card image">
+          </div>
+  
+          <div class="card__content">
+            <span class="card__title">Web Developer</span>
+            <span class="card__name">Steven Yeun</span>
+            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+            <button class="card__btn">View More</button>
+          </div>
+        </div>
+  
+        <div class="card swiper-slide">
+          <div class="card__image">
+            <img src="./assets/Img/pexels-sound-on-3760707.jpg" alt="card image">
+          </div>
+  
+          <div class="card__content">
+            <span class="card__title">Animatrice</span>
+            <span class="card__name">Kadji Traoré</span>
+            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+            <button class="card__btn">View More</button>
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="card__image">
+            <img src="./assets/Img/pexels-bankole-adeoni-4997459-removebg-preview.png" alt="card image">
+          </div>
+  
+          <div class="card__content">
+            <span class="card__title">Administrateur</span>
+            <span class="card__name">Bankole Iwanio</span>
+            <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+            <button class="card__btn">View More</button>
+          </div>
+        </div>
+  
+      </div>
+
+    </section>
+
+    <section class="scroller" class="container" id="event">
+      <h2></h2>
+      <p><img src="assets/Img/citation .png" alt="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Dolor facere, voluptate perspiciatis expedita saepe inventore? Suscipit quidem officiis vero possimus minima, molestiae fugit esse excepturi ratione eveniet.
+         Assumenda, magnam quae. <img src="assets/Img/ish.png" alt=""></p>
+      <div class="shape"></div>
+      <div class="shaper"></div>
+      <div class="shaping"></div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="./assets/Img/pexels-vanessa-loring-7869442.jpg" alt="Projet 1">
+            <div class="caption">
+              <h3></h3>
+              <p>Atelier de mise en éveil pour les plus jeunes.</p>
+              <p><a href="#" class="btn btn-primary" role="button">En savoir plus</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="./assets/Img/pexels-vanessa-loring-7868883.jpg" alt="Projet 2">
+            <div class="caption">
+              <h3></h3>
+              <p>Atelier découvertes des nouvelles technologies.</p>
+              <p><a href="#" class="btn btn-primary" role="button">En savoir plus</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="./assets/Img/pexels-rodnae-productions-8082888.jpg" alt="Projet 3">
+            <div class="caption">
+              <h3></h3>
+              <p>Voyages, découvertes et pratiques des langues.</p>
+              <p><a href="#" class="btn btn-primary" role="button">En savoir plus</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img src="./assets/Img/pexels-monstera-6238120.jpg" alt="Projet 3">
+            <div class="caption">
+              <h3></h3>
+              <p>éducation, réinsertion, formation diplomante et recherche de travail</p>
+              <p><a href="#" class="btn btn-primary" role="button">En savoir plus</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="scroller" class="container" id="donation">
+     <div class="donate">
+      <h2></h2>
+      <p class="dns">Nous sommes toujours reconnaissants des dons que nous recevons pour aider à soutenir notre travail. Si vous
+        souhaitez faire un don, veuillez cliquer sur le bouton ci-dessous pour être redirigé vers notre page de dons.
+      </p>
+      <p><a href="#" class="btn btn-primary btn-lg" role="button">je fait un don</a></p>
+     </div>
+    </section>
+
+    <section class="scroller" class="container" id="blog">
+      <h2>Blog</h2>
+      <p>Nous sommes toujours reconnaissants des dons que nous recevons pour aider à soutenir notre travail. Si vous
+        souhaitez faire un don, veuillez cliquer sur le bouton ci-dessous pour être redirigé vers notre page de dons.
+      </p>
+      <p><a href="#" class="btn btn-primary btn-lg" role="button">Cliquez ici</a></p>
+    </section>
+
+    <section class="scroller" class="container" id="contact">
+      <h2></h2>
+      
+
+      <div class="cont">
+        <p>&copy; Citoyen du monde 2023 - All Rights Reserved</p>
+      </div>
+    </section>
+    
+  </main>
+  <script src="./assets/script.js"></script>
+  <script src="https://unicons.iconscout.com/release/v4.0.8/script/monochrome/bundle.js"></script>
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <!-- Lien vers jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Lien vers Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
 </body>
 
 </html>
