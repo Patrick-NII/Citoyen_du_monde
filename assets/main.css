@@ -1,0 +1,186 @@
+/*========reset=========*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	
+}
+body {
+    overflow-x: hidden;
+}
+
+  
+  @media (max-width: 399px) {
+    
+    header .container .word {
+        width: 70%;
+        padding-top: 30px;
+    }
+    #myNavbar .navbar-nav {
+        display: none;
+    }
+   main  #acceuil h1 {
+        font-size: 2.5rem;
+      }
+      footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
+      }
+      footer .container p {
+        font-size: 0.6rem;
+      }
+  }
+  
+  @media (min-width: 400px) and (max-width: 575px) {
+	header .container .word {
+        width: 70%;
+        padding-top: 25px;
+    }
+    .letter {
+	  font-size: 4vw;
+	  width: 5vw;
+	  height: 5vw;
+	  margin: 0.5vw;
+	}
+    #myNavbar .navbar-nav {
+        display: none;
+    }
+    main  #acceuil h1 {
+        font-size: 3rem;
+      }
+      footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
+      }
+      footer .container p {
+        font-size: 0.8rem;
+      }
+    
+  }
+  
+@media (min-width: 576px) and (max-width: 767px) {
+	header .container .word {
+        width: 70%;
+        padding-top: 25px;
+    }
+    .letter {
+	  font-size: 6vw;
+	  width: 7vw;
+	  height: 7vw;
+	  margin: 0.5vw;
+	}
+    #myNavbar .navbar-nav {
+        display: none;
+    }
+    main  #acceuil h1 {
+        font-size: 3.5rem;
+      }
+      footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
+      }
+      footer .container p {
+        font-size: 1rem;
+      }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    header .container .word {
+        padding-top: 22px;
+    }
+    .letter {
+	  font-size: 4vw;
+	  width: 5vw;
+	  height: 5vw;
+	  margin: 0.3vw;
+	}
+    #myNavbar .navbar-nav {
+        display: none;
+    }
+    main  #acceuil h1 {
+        font-size: 4rem;
+      }
+      footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
+      }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+	.letter {
+	  font-size: 3vw;
+	  width: 3.5vw;
+	  height: 3.5vw;
+	  margin: 0.2vw;
+	}
+    footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
+      }
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1439px) {
+	.letter {
+	  font-size: 2vw;
+	  width: 2.5vw;
+	  height: 2.5vw;
+	  margin: 0.15vw;
+	}
+    footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
+      }
+  }
+  
+  @media (min-width: 1440px) and (max-width: 1599px) {
+	.letter {
+	  font-size: 1.8vw;
+	  width: 2.2vw;
+	  height: 2.2vw;
+	  margin: 0.1vw;
+	}
+    footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
+      }
+  }
+  
+  @media (min-width: 1600px) and (max-width: 1919px) {
+	.letter {
+	  font-size: 1.5vw;
+	  width: 1.8vw;
+	  height: 1.8vw;
+	  margin: 0.1vw;
+	}
+    footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
+      }
+  }
+  
+  @media (min-width: 1920px) {
+	.letter {
+	  font-size: 1.2vw;
+	  width: 1.5vw;
+	  height: 1.5vw;
+	  margin: 0.08vw;
+	}
+    footer {
+        width: 100vw;
+        height: 100vh;
+        background: #0080a0;
+      }
+  }
+  
+  
